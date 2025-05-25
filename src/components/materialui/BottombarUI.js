@@ -1,6 +1,6 @@
 import  '../../App.css';
 
-function BottomBarDiv() {
+function BottomBarUI() {
   return (
     <div className="BottomUI">
       <header className="BottomUI_Content">
@@ -12,4 +12,4 @@ function BottomBarDiv() {
   );
 }
 
-export default BottomBarDiv;
+export default BottomBarUI;

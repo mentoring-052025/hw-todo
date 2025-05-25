@@ -1,9 +1,5 @@
-/*import './App.css';*/
-/*import AppBoiler from './components/html/AppBoiler';
-import HeaderDiv from './components/html/Header';
-import BottomBarDiv from './components/html/Bottombar';*/
-import WrapHTML from './components/warpper/WrapHTML';
-import WrapUI from './components/warpper/WrapUI';
+import WrapHTML from './components/wrapper/WrapHTML';
+import WrapUI from './components/wrapper/WrapUI';
 import { useState } from 'react';
 
 

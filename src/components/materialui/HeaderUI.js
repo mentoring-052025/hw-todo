@@ -1,6 +1,6 @@
 import  '../../App.css';
 
-function HeaderDiv() {
+function HeaderUI() {
   return (
     <div className="HeaderUI">
       <header className="HeaderUI_Content">
@@ -12,4 +12,4 @@ function HeaderDiv() {
   );
 }
 
-export default HeaderDiv;
+export default HeaderUI;

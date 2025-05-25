@@ -1,7 +1,7 @@
 /*import './App.css';*/
-import AppBoiler from '../materialui/AppBoiler';
-import HeaderDiv from '../materialui/Header';
-import BottomBarDiv from '../materialui/Bottombar';
+import AppBoilerUI from '../materialui/AppBoiler';
+import HeaderUI from '../materialui/HeaderUI';
+import BottomBarUI from '../materialui/BottombarUI';
 import { useState } from 'react';
 
 
@@ -15,14 +15,14 @@ function WrapUI() {
   return (
     <>
       <div className="MobileUI"> 
-      <HeaderDiv />
+      <HeaderUI />
       <div className='CustomAdmin'>
         
         <button className='BtnTmp1' onClick={setShowValue1}>Show/hide content UI</button>
         <button className='BtnTmp2' onClick={setShowValue2}>Show/hide bottom nav UI</button>
       </div>
-      {isShow1 && <AppBoiler />}
-      {isShow2 && <BottomBarDiv />}
+      {isShow1 && <AppBoilerUI />}
+      {isShow2 && <BottomBarUI />}
       </div>
     </>
   );
