@@ -1,38 +1,141 @@
-.App {
+.MobileHTML {
+  width: 700px;
+  /*min-width: 85vh;
+  max-width: 95vh;*/
+  margin: auto;
+  min-height: 80vh;
+  max-height: 95vh;
+}
+
+.MobileUI {
+  width: 700px;
+  /*min-width: 85vh;
+  max-width: 95vh;*/
+  margin: auto;
+  min-height: 80vh;
+  max-height: 95vh;
+}
+
+.BoilerDiv {
+  width: 500px; /* set a fixed size to mimic mobile screen */
+  margin: auto; /* align to cneter */
   text-align: center;
+  padding: 15px;
+  background-color: aqua;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BoilerUI {
+  width: 500px; /* set a fixed size to mimic mobile screen */
+  margin: auto; /* align to cneter */
+  text-align: center;
+  padding: 15px;
+  background-color: aqua;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.BoilerDiv-Fill {
+  background-color:white;
+  border: 2px solid black;
+  min-height: 80vh;
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.BoilerUI-Fill {
+  background-color:white;
+  border: 2px solid black;
+  min-height: 80vh;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.HeaderDiv {
+  background-color: blue;
+  border: 2px solid black;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
+}
+
+.HeaderUI {
+  background-color: green;
+  border: 2px solid black;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
+}
+
+.BottomDiv {
+  background-color: green;
+  border: 2px solid black;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
+}
+
+.BottomUI {
+  background-color: blue;
+  border: 2px solid black;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
+}
+
+.CustomAdmin {
+  background-color: grey;
+  border: 2px solid black;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
+}
+
+
+.BtnTmp {
+  min-height: 40px;
+  max-height: 40px;
+  margin: auto;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 14px;
+  color: black;
 }

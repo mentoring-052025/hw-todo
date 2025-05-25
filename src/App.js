@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+/*import './App.css';*/
+/*import AppBoiler from './components/html/AppBoiler';
+import HeaderDiv from './components/html/Header';
+import BottomBarDiv from './components/html/Bottombar';*/
+import WrapHTML from './components/warpper/WrapHTML';
+import WrapUI from './components/warpper/WrapUI';
+import { useState } from 'react';
+
 
 function App() {
+
+  /* states that control which version of the app to show, version are split into "wrappers" */
+  /* it toggles the value either html or UI (html = version of the app with HTML UI components, UI = version with material UI components */
+  const [showVer, setShowVer]  = useState("html");
+  const setShowVerVal = () =>  setShowVer(showVer === "html" ? "ui": "html");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <div className="AppWrapper"> 
+        <button onClick={setShowVerVal}>HTML/UI</button>
+      {/* For learning purposes I will practice boht HTML and Material UI design and will try to replicate draft version of both*/}
+      {/* Manipulate the true/false state in React Dev tools to pick which version to show; I will add a promp with useEffect to ask for the user to pick one on first load */}
+      {showVer === "html" && <WrapHTML />}
+      {showVer === "ui" && <WrapUI />}
+      </div>
+    </>
   );
 }
 
