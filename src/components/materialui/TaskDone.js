@@ -16,20 +16,12 @@ import {
   CssBaseline,
 } from "@mui/material";
 
-function TaskList() {
+function TaskDone() {
   const { isMUI } = useContext(AppContext);
 
   const tasks = [
-    { createdAt: 1, taskName: "My Todo Fill 1", isDone: false, completedAt: 0 },
-    { createdAt: 2, taskName: "My Todo Fill 2", isDone: false, completedAt: 0 },
-    { createdAt: 3, taskName: "My Todo New 3", isDone: false, completedAt: 0 },
-    { createdAt: 4, taskName: "Add checkbox", isDone: true, completedAt: 0 },
-    {
-      createdAt: 5,
-      taskName: "Add title/desc and save icon",
-      isDone: false,
-      completedAt: 0,
-    },
+    { createdAt: 1, taskName: "Done 1", isDone: true, completedAt: 0 },
+    { createdAt: 2, taskName: "Done 2", isDone: true, completedAt: 0 },
   ];
 
   const [taskState, setTasks] = useState(tasks);
@@ -84,18 +76,6 @@ function TaskList() {
 
   return (
     <div className="TaskContainer">
-      <TextField
-        id="outlined-controlled"
-        label="Controlled"
-        value={name}
-        onChange={(event) => {
-          setName(event.target.value);
-        }}
-      />
-
-      {isMUI && <Button onClick={AddTask2}>Add task</Button>}
-      {!isMUI && <button>Add task button</button>}
-
       <CssBaseline />
 
       <Typography gutterBottom variant="h5" component="div">
@@ -119,15 +99,8 @@ function TaskList() {
           {/* dynamic items*/}
         </Stack>
       </Box>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   );
 }
 
-export default TaskList;
+export default TaskDone;

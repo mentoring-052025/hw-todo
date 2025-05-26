@@ -1,5 +1,6 @@
 /*import * as React from "react"; */ /* importint all requires referencing import const as ref = React.useRef(null); */
 import { useState } from "react";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -11,7 +12,20 @@ import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material"; /* add all imports  into one row */
 
 export default function BottomNav() {
-  const [value, setValue] = useState(0);
+  // const [value, setValue] = useState(0);
+  const routepath = useNavigate();
+
+  const bottomPaths = ["/wrapper", "/saved", "/done", "/lists"];
+  const currentPath = useLocation();
+  const pathOn = currentPath.pathname;
+  const bottomIndex = bottomPaths.findIndex(
+    (findValue) => findValue === pathOn
+  );
+  console.log(pathOn);
+  console.log(bottomIndex);
+  let navIndex = bottomIndex;
+  console.log("cliked on " + navIndex);
+  console.log("cliked on " + bottomIndex);
 
   return (
     <Container>
@@ -22,15 +36,31 @@ export default function BottomNav() {
         <CssBaseline /> {/* is this needed? */}
         <BottomNavigation
           showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
+          value={navIndex}
+          //onChange={(event, newValue) => {
+          //  setValue(newValue);
+          // }}
         >
-          <BottomNavigationAction label="Tasks" icon={<AddTaskIcon />} />
-          <BottomNavigationAction label="Important" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Done" icon={<ArchiveIcon />} />
-          <BottomNavigationAction label="Lists" icon={<ListIcon />} />
+          <BottomNavigationAction
+            onClick={() => routepath("/wrapper")}
+            label="Tasks"
+            icon={<AddTaskIcon />}
+          />
+          <BottomNavigationAction
+            onClick={() => routepath("/saved")}
+            label="Important"
+            icon={<FavoriteIcon />}
+          />
+          <BottomNavigationAction
+            onClick={() => routepath("/done")}
+            label="Done"
+            icon={<ArchiveIcon />}
+          />
+          <BottomNavigationAction
+            onClick={() => routepath("/lists")}
+            label="Lists"
+            icon={<ListIcon />}
+          />
         </BottomNavigation>
       </Paper>
     </Container>

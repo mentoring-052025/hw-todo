@@ -16,7 +16,29 @@
   max-height: 95vh;
 }
 
+
+.Welcome {
+  max-width: 700px;
+  /*min-width: 85vh;
+  max-width: 95vh;*/
+  background-color: #F4F6F9;
+  margin: auto;
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
 .MobileUI {
+  max-width: 700px;
+  /*min-width: 85vh;
+  max-width: 95vh;*/
+  background-color: #F4F6F9;
+  margin: auto;
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
+
+.MobileWrap {
   max-width: 700px;
   /*min-width: 85vh;
   max-width: 95vh;*/
