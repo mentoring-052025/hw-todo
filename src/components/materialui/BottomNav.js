@@ -1,5 +1,5 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
+/*import * as React from "react"; */ /* importint all requires referencing import const as ref = React.useRef(null); */
+import { useState } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -8,18 +8,18 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import AddTaskIcon from "@mui/icons-material/AddTask";
 import ListIcon from "@mui/icons-material/List";
 import Paper from "@mui/material/Paper";
+import { Container } from "@mui/material"; /* add all imports  into one row */
 
 export default function BottomNav() {
-  const [value, setValue] = React.useState(0);
-  const ref = React.useRef(null);
+  const [value, setValue] = useState(0);
 
   return (
-    <Box sx={{ pb: 7 }} ref={ref}>
-      <CssBaseline /> {/* is this needed? */}
+    <Container>
       <Paper
         sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
         elevation={3}
       >
+        <CssBaseline /> {/* is this needed? */}
         <BottomNavigation
           showLabels
           value={value}
@@ -33,6 +33,6 @@ export default function BottomNav() {
           <BottomNavigationAction label="Lists" icon={<ListIcon />} />
         </BottomNavigation>
       </Paper>
-    </Box>
+    </Container>
   );
 }

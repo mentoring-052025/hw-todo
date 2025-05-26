@@ -1,8 +1,8 @@
 /*import './App.css';*/
 import AppBoilerUI from "../materialui/AppBoiler";
 import HeaderUI from "../materialui/HeaderUI";
-import BottomBarUI from "../materialui/BottombarUI";
-import FixedBottomNavigation from "../materialui/FixedBottom";
+/*import BottomBarUI from "../materialui/BottombarUI";
+import FixedBottomNavigation from "../materialui/FixedBottom";*/
 import BottomNav from "../materialui/BottomNav";
 import { useState } from "react";
 
