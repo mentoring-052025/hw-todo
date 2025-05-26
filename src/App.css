@@ -1,23 +1,33 @@
-.MobileHTML {
-  width: 700px;
+.AppWrapper {
+  max-width: 700px;
   /*min-width: 85vh;
   max-width: 95vh;*/
   margin: auto;
-  min-height: 80vh;
+  min-height: 90vh;
+  max-height: 95vh;
+}
+
+.MobileHTML {
+  max-width: 700px;
+  /*min-width: 85vh;
+  max-width: 95vh;*/
+  margin: auto;
+  min-height: 95vh;
   max-height: 95vh;
 }
 
 .MobileUI {
-  width: 700px;
+  max-width: 700px;
   /*min-width: 85vh;
   max-width: 95vh;*/
+  background-color: #F4F6F9;
   margin: auto;
-  min-height: 80vh;
+  min-height: 95vh;
   max-height: 95vh;
 }
 
 .BoilerDiv {
-  width: 500px; /* set a fixed size to mimic mobile screen */
+  max-width: 500px; /* set a fixed size to mimic mobile screen */
   margin: auto; /* align to cneter */
   text-align: center;
   padding: 15px;
@@ -25,17 +35,27 @@
 }
 
 .BoilerUI {
-  width: 500px; /* set a fixed size to mimic mobile screen */
+  max-width: 500px; /* set a fixed size to mimic mobile screen */
   margin: auto; /* align to cneter */
   text-align: center;
   padding: 15px;
   background-color: aqua;
+  /*min-height: 2000px;*/
+}
+
+
+.TaskContainer {
+  min-width: 95%; /* set a fixed size to mimic mobile screen */
+  max-width: 95%; /* set a fixed size to mimic mobile screen */
+  margin: auto; /* align to cneter */
+  padding: 15px;
+  min-height: 600px;
 }
 
 .BoilerDiv-Fill {
   background-color:white;
   border: 2px solid black;
-  min-height: 80vh;
+  min-height: 50vh;
   max-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -46,9 +66,9 @@
 }
 
 .BoilerUI-Fill {
-  background-color:white;
+  background-color: #F4F6F9;
   border: 2px solid black;
-  min-height: 80vh;
+  min-height: 50vh;
   max-height: 95vh;
   display: flex;
   flex-direction: column;

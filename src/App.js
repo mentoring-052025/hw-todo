@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <div className="AppWrapper">
-        <button onClick={setShowVerVal}>HTML/UI</button>
+        {/* <button onClick={setShowVerVal}>HTML/UI</button> */}
         {/* For learning purposes I will practice boht HTML and Material UI design and will try to replicate draft version of both*/}
         {/* Manipulate the true/false state in React Dev tools to pick which version to show; I will add a promp with useEffect to ask for the user to pick one on first load */}
         {/* {showVer === "html" && <WrapHTML />} */}
