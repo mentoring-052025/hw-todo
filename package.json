@@ -2,7 +2,7 @@
   "name": "hw-todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://uusen-hub.github.io/hw-todo",
+  "homepage": "https://mentoring-052025.github.io/hw-tod",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
