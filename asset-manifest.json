@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hw-todo/static/css/main.c4bb1fdc.css",
-    "main.js": "/hw-todo/static/js/main.98a2ccc0.js",
+    "main.css": "/hw-todo/static/css/main.5e2d4183.css",
+    "main.js": "/hw-todo/static/js/main.ab6f4f1a.js",
     "static/js/453.8b1c8f22.chunk.js": "/hw-todo/static/js/453.8b1c8f22.chunk.js",
     "index.html": "/hw-todo/index.html",
-    "main.c4bb1fdc.css.map": "/hw-todo/static/css/main.c4bb1fdc.css.map",
-    "main.98a2ccc0.js.map": "/hw-todo/static/js/main.98a2ccc0.js.map",
+    "main.5e2d4183.css.map": "/hw-todo/static/css/main.5e2d4183.css.map",
+    "main.ab6f4f1a.js.map": "/hw-todo/static/js/main.ab6f4f1a.js.map",
     "453.8b1c8f22.chunk.js.map": "/hw-todo/static/js/453.8b1c8f22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4bb1fdc.css",
-    "static/js/main.98a2ccc0.js"
+    "static/css/main.5e2d4183.css",
+    "static/js/main.ab6f4f1a.js"
   ]
 }
