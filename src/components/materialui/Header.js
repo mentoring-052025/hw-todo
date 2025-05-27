@@ -8,10 +8,12 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { AppContext } from "../../context/AppContext";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 
 /* lift state up and add to app version Context */
 
 function Header() {
+  const routepath = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   // the value and function are assigned from context
@@ -25,6 +27,8 @@ function Header() {
     setAnchorEl(null);
     if (isUpdate) {
       toggleVersion();
+    } else {
+      routepath("/hw-todo");
     }
   };
 
@@ -64,7 +68,7 @@ function Header() {
               >
                 <MenuItem onClick={() => handleClose(false)}>Reload</MenuItem>
                 <MenuItem onClick={() => handleClose(true)}>
-                  {isMUI ? "Show MUI" : "Show HTML"}
+                  {isMUI ? "Show HTML" : "Show MUI"}
                 </MenuItem>
               </Menu>
             </div>

@@ -10,12 +10,13 @@ import AddTaskIcon from "@mui/icons-material/AddTask";
 import ListIcon from "@mui/icons-material/List";
 import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material"; /* add all imports  into one row */
+import AddButton from "./AddButton";
 
 export default function BottomNav() {
   // const [value, setValue] = useState(0);
   const routepath = useNavigate();
 
-  const bottomPaths = ["/wrapper", "/saved", "/done", "/lists"];
+  const bottomPaths = ["/all", "/saved", "/done", "/lists"];
   const currentPath = useLocation();
   const pathOn = currentPath.pathname;
   const bottomIndex = bottomPaths.findIndex(
@@ -42,7 +43,7 @@ export default function BottomNav() {
           // }}
         >
           <BottomNavigationAction
-            onClick={() => routepath("/wrapper")}
+            onClick={() => routepath("/all")}
             label="Tasks"
             icon={<AddTaskIcon />}
           />

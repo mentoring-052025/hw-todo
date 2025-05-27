@@ -8,7 +8,10 @@ import { AppProvider, AppContext } from "./context/AppContext";
 import Wrapper from "./components/pages/wrapper";
 import Welcome from "./components/materialui/Welcome";
 import TaskDone from "./components/materialui/TaskDone";
-import PageDone from "./components/pages/done";
+import PageAll from "./components/pages/PageAll";
+import PageSaved from "./components/pages/PageSaved";
+import PageDone from "./components/pages/PageDone";
+import PageLists from "./components/pages/PageList";
 
 function App() {
   /* states that control which version of the app to show, version are split into "wrappers" */
@@ -38,8 +41,10 @@ function App() {
           <Routes>
             <Route path="/hw-todo" element={<Welcome />} />
             <Route path="/" element={<Welcome />} />
-            <Route path="/wrapper" element={<Wrapper />} />
+            <Route path="/all" element={<PageAll />} />
             <Route path="/done" element={<PageDone />} />
+            <Route path="/saved" element={<PageSaved />} />
+            <Route path="/lists" element={<PageLists />} />
           </Routes>
         </div>
       </AppProvider>

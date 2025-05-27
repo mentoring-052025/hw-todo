@@ -22,7 +22,7 @@ function Welcome() {
   const routepath = useNavigate();
 
   function enterDemo(button) {
-    routepath("/wrapper");
+    routepath("/all");
     if (button === "html") {
       toggleVersion();
     }
